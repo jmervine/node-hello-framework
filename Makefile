@@ -5,6 +5,17 @@ ROOT=$(shell pwd)
 clean: clean/locomotive clean/nombo clean/socketstream
 	-rm -rf node_modules
 
+# Connect
+###
+connect: node_modules/connect .PHONY
+	node connect
+
+node_modules/connect:
+	npm install connect
+
+clean/connect: .PHONY
+	-rm -rf node_modules/connect
+
 # Express
 ###
 express: node_modules/express .PHONY

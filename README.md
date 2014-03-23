@@ -16,8 +16,19 @@ A far from complete collection of Hello World examples for various Node.js web f
 >   * `node_modules/<framework npm>`
 >   * `clean/<framework>`
 
-### Frameworks:
+## Quick Start
 
+    git clone https://github.com/jmervine/node-hello-framework.git
+    cd node-hello-framework
+    make <framework>
+
+    # example:
+    #
+    # $ make express
+
+## Frameworks:
+
+* [connect]
 * [express]
 * [geddy]
 * [flatiron]
@@ -29,19 +40,13 @@ A far from complete collection of Hello World examples for various Node.js web f
 * ~~[koa]~~
 * ~~[tower]~~
 
-## Quick Start
-
-    git clone https://github.com/jmervine/node-hello-framework.git
-    cd node-hello-framework
-    make <framework>
-
-    # example:
-    #
-    # $ make express
-
 ## Framework Notes
 
-Along with a short description, included are notes on extra steps -- aside from the `<framework>.js` example file, if any.
+Along with a short description, included are notes on extra steps -- aside from the `<framework>/index.js` example file, if any.
+
+### [Connect][connect]
+
+Connect is a middleware framework for node, shipping with over 18 bundled middleware and a rich selection of 3rd-party middleware.
 
 ### [Express][express]
 
@@ -60,7 +65,7 @@ A simple, structured web framework for Node
 
 ### [Flatiron][flatiron]
 
-An adaptable framework for building modern web applications. 
+An adaptable framework for building modern web applications.
 
 ##### Additional Notes
 
@@ -142,7 +147,7 @@ Opa is a full-stack open source web development framework for JavaScript that le
 **Opa has been omitted at this time, as a pure npm install is either unsupported or broken.**
 
 
-[connect]: http://www.senchalabs.org/connect/ 
+[connect]: http://www.senchalabs.org/connect/
 [express]: http://expressjs.com/
 [geddy]: http://geddyjs.org/
 [flatiron]: http://flatironjs.org/
