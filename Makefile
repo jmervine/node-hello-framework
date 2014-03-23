@@ -53,7 +53,7 @@ node_modules/union:
 
 clean/flatiron: .PHONY
 	-rm -rf node_modules/flatiron
-	-rm -rf node_modules/orion
+	-rm -rf node_modules/union
 	-rm node_modules/.bin/flatiron
 
 # Locomotive
