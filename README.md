@@ -108,17 +108,18 @@ Ops has been omitted at this time, as a pure npm install is either unsupported o
 Does not work without Mongo and Redis.
 
 
-[express]:
-[geddy]:
-[flatiron]:
-[locomotive]:
-[nombo]:
-[partial.js]:
-[socketstream]:
-[socket.io]:
-[koa]:
-[tower]:
+[express]: http://expressjs.com/
+[geddy]: http://geddyjs.org/
+[flatiron]: http://flatironjs.org/
+[locomotive]: http://locomotivejs.org/
+[nombo]: http://nombo.io/
+[partial.js]: http://www.partialjs.com/
+[socketstream]: http://www.socketstream.org/
+[socket.io]: http://socket.io/
+[koa]: http://koajs.com/
+[tower]: http://tower.github.io/
 
-[union module]:
-[Redis]:
-[MongoDB]:
+[union module]: https://www.npmjs.org/package/union
+[Redis]: http://redis.io/
+[MongoDB]: https://www.mongodb.org/
+
