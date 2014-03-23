@@ -1,4 +1,4 @@
-# Node.js Hello <framework>
+# Node.js Hello Framework
 
 A far from complete collection of Hello World examples for various Node.js web frameworks.
 
