@@ -67,7 +67,7 @@ An adaptable framework for building modern web applications.
 
 #### Additional Notes
 
-I addtion to the flatiron module, I also had to install the [union module] to get the example to work.
+> I addtion to the flatiron module, I also had to install the [union module] to get the example to work.
 
 ### [Locomotive][locomotive]
 
