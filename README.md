@@ -29,8 +29,8 @@ A far from complete collection of Hello World examples for various Node.js web f
 
 ## Quick Start
 
-    git clone <repo>
-    cd <repo>
+    git clone https://github.com/jmervine/node-hello-framework.git
+    cd node-hello-framework
     make <framework>
 
     # example:
