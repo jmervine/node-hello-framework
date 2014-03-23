@@ -54,7 +54,7 @@ A [Sinatra] like router for node, which includes a [connect], as simple node mid
 
 A simple, structured web framework for Node
 
-##### Additional Notes
+#### Additional Notes
 
     npm install geddy
     ./node_modules/.bin/geddy gen app geddy
@@ -65,7 +65,7 @@ A simple, structured web framework for Node
 
 An adaptable framework for building modern web applications.
 
-##### Additional Notes
+#### Additional Notes
 
 I addtion to the flatiron module, I also had to install the [union module] to get the example to work.
 
@@ -73,7 +73,7 @@ I addtion to the flatiron module, I also had to install the [union module] to ge
 
 Locomotive is a web framework for Node.js. Locomotive supports MVC patterns, RESTful routes, and convention over configuration, while integrating seamlessly with any database and template engine. Locomotive builds on [Express][express], preserving the power and simplicity you've come to expect from Node.
 
-##### Additional Notes
+#### Additional Notes
 
     npm install locomotive
     ./node_modules/.bin/lcm create locomotive
@@ -85,7 +85,7 @@ Locomotive is a web framework for Node.js. Locomotive supports MVC patterns, RES
 
 Nombo is a Node.js framework for building scalable realtime single-page apps.
 
-##### Additional Notes
+#### Additional Notes
 
     npm install nombo
     ./node_modules/.bin/nombo create --force nombo
@@ -96,7 +96,7 @@ Nombo is a Node.js framework for building scalable realtime single-page apps.
 
 A fast, modular Node.js web framework dedicated to building realtime single-page apps.
 
-##### Additional Notes
+#### Additional Notes
 
     npm install socketstream
     ./node_modules/.bin/socketstream -m new socketstream
