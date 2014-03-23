@@ -1,0 +1,16 @@
+{
+  "name": "app-name",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "locomotive": "0.4.x",
+    "bootable": "0.2.x",
+    "bootable-environment": "0.2.x",
+    "express": "3.x.x",
+    "connect-powered-by": "0.1.x",
+    "ejs": "0.8.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

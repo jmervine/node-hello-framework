@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <script>
+            // initialize socket.io connection with server
+            var socket = io.connect('http://localhost:3000');
+
+            // listen for hello message from server
+            socket.on('hello client', function (data) {
+                console.dir(data.hello);
+                document.write(data.hello);
+
+                // send server hello message back
+                socket.emit('hello server', { hello: 'Hello Socket.IO Server!' });
+            });
+        </script>
+    </body>
+</html>

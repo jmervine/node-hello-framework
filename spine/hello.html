@@ -1,0 +1,23 @@
+<html>
+    <head>
+<!--
+    Spine recommends using jQuery and so do I, however, to keep this
+    example as simple as possible, I'm using pure javascript.
+-->
+
+        <script src="lib/spine.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            // spine controller
+            Hello = Spine.Model.sub({
+                init: function() {
+                    document.getElementById("hello").innerHTML = 'Hello Spine!';
+                }
+            });
+        </script>
+    </head>
+
+    <body onload="new Hello()"> <!-- initialize Hello Controller -->
+        <div id="hello"> ... </div>
+    </body>
+</html>
+
