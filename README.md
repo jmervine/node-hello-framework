@@ -37,8 +37,6 @@ A far from complete collection of Hello World examples for various Node.js web f
 * [partial.js]
 * [socketstream]
 * [socket.io]
-* ~~[koa]~~
-* ~~[tower]~~
 
 ## Framework Notes
 
