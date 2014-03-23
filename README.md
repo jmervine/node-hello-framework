@@ -1,6 +1,6 @@
 # Node.js Hello Framework
 
-**[https://github.com/jmervine/node-hello-framework](https://github.com/jmervine/node-hello-framework)**
+### [https://github.com/jmervine/node-hello-framework](https://github.com/jmervine/node-hello-framework)
 
 A far from complete collection of Hello World examples for various Node.js web frameworks.
 
