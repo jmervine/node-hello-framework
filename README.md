@@ -37,6 +37,8 @@ A far from complete collection of Hello World examples for various Node.js web f
 * [partial.js]
 * [socketstream]
 * [socket.io]
+* [spine]
+* [hapi]
 
 ## Framework Notes
 
@@ -104,6 +106,18 @@ A fast, modular Node.js web framework dedicated to building realtime single-page
     npm install
     node app.js
 
+### [Spine][spine]
+
+Spine is a lightweight framework for building JavaScript web applications. Spine gives you an MVC structure and then gets out of your way, allowing you to concentrate on the fun stuff, building awesome web applications.
+
+#### Additional Notes
+
+> As Spine is a client side framework, I simply downloaded and extracted [the spine zip file][spine zip]. I then removed all contents not used for this example.
+
+### [Hapi][hapi]
+
+A rich framework for building web applications and services. hapi is a simple to use configuration-centric framework with built-in support for input validation, caching, authentication, and other essential facilities. hapi enables developers to focus on writing reusable application logic instead of spending time building infrastructure. The framework supports a powerful plugin architecture for pain-free and scalable extensibility.
+
 ----
 
 ## In Flux
@@ -154,6 +168,9 @@ Opa is a full-stack open source web development framework for JavaScript that le
 [partial.js]: http://www.partialjs.com/
 [socketstream]: http://www.socketstream.org/
 [socket.io]: http://socket.io/
+[spine]: http://spinejs.com/
+[hapi]: http://spumko.github.io/
+
 [koa]: http://koajs.com/
 [tower]: http://tower.github.io/
 [meteor]: https://www.meteor.com/
@@ -164,3 +181,4 @@ Opa is a full-stack open source web development framework for JavaScript that le
 [Redis]: http://redis.io/
 [MongoDB]: https://www.mongodb.org/
 [Sinatra]: http://www.sinatrarb.com/
+[spine zip]: http://spinejs.com/pages/download

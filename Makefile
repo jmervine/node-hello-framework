@@ -2,7 +2,7 @@ ROOT=$(shell pwd)
 
 # Global Tasks
 ###
-clean: clean/locomotive clean/nombo clean/socketstream
+clean: clean/locomotive clean/socketstream
 	-rm -rf node_modules
 
 # Connect
@@ -132,6 +132,18 @@ spine: .PHONY
 
 clean/spine:
 	@echo "no clean actions required"
+
+# Hapi
+###
+hapi: node_modules/hapi .PHONY
+	node hapi
+
+node_modules/hapi:
+	npm install hapi
+
+clean/hapi:
+	-rm -rf node_modules/hapi
+	-rm -rf node_modules/.bin/hapi
 
 # Koa
 ###
