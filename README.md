@@ -28,6 +28,7 @@ A far from complete collection of Hello World examples for various Node.js web f
 
 ## Frameworks:
 
+* [compound.js](#compound.js)
 * [connect](#connect)
 * [express](#express)
 * [flatiron](#flatiron)
@@ -47,6 +48,31 @@ A far from complete collection of Hello World examples for various Node.js web f
 ## Framework Notes
 
 Along with a short description, included are notes on extra steps -- aside from the `<framework>/index.js` example file, if any.
+
+### [Compound.js][compound.js]
+
+Compound's formula is Express + structure + extensions. Where structure is the standard layout of directories, and extensions are node modules adding functionality to the framework. Compound's goal is to provide an obvious and well-organized interface for express compatible application development. This means that everything that works with express will work with compound.
+
+#### Additional Notes
+
+> To setup compound, as it's a generated framework, I did the following...
+
+    npm install compound
+    ./node_modules/.bin/compound init compound.js
+    cd compound
+    npm install
+    npm install --save compound # because I installed compound locally
+
+> I then...
+>
+> * Removed `public/index.html` to allow for the routing to work.
+> * Added `app/controllers/hello_controller.js` to send the hello message.
+> * Added `app/views/hello/index.ejs` to display the hello message.
+> * Updated `config/routes.js` to point the main location to the hello controller.
+>
+> Once complete, I...
+
+    node server.js
 
 ### [Connect][connect]
 
@@ -220,6 +246,7 @@ Opa is a full-stack open source web development framework for JavaScript that le
 > Opa has been omitted at this time, as a pure npm install is either unsupported or broken.
 
 
+[compound.js]: http://compoundjs.com/
 [connect]: http://www.senchalabs.org/connect/
 [express]: http://expressjs.com/
 [flatiron]: http://flatironjs.org/

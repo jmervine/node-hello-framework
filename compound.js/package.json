@@ -1,0 +1,31 @@
+{
+  "name": "hello",
+  "version": "0.0.1",
+  "engines": [
+    "node >= 0.8.0"
+  ],
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "*",
+    "ejs-ext": "latest",
+    "express": "^3.5.0",
+    "compound": "^1.1.13-1",
+    "jugglingdb": ">= 0.1.0",
+    "coffee-script": ">= 1.1.1",
+    "stylus": "latest",
+    "seedjs": "latest",
+    "co-assets-compiler": "*"
+  },
+  "devDependencies": {
+    "nodeunit": "*",
+    "sinon": "*",
+    "supertest": ">= 0",
+    "mocha": ">= 0",
+    "should": ">= 0",
+    "semicov": "*",
+    "co-generators": "*"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --require test/init.js test/*/*.test.js"
+  }
+}

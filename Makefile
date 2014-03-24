@@ -2,8 +2,26 @@ ROOT=$(shell pwd)
 
 # Global Tasks
 ###
-clean: clean/locomotive clean/socketstream
+clean: clean/locomotive \
+			clean/socketstream \
+			clean/compound.js
 	-rm -rf node_modules
+
+# CompoundJS
+###
+compound.js: node_modules/compound compound.js/node_modules .PHONY
+	cd compound.js; node server.js
+
+node_modules/compound:
+	npm install compound
+
+compound.js/node_modules:
+	cd compound.js; npm install
+
+clean/compound.js:
+	-rm -rf node_modules/compound
+	-rm -rf node_modules/.bin/compound
+	-rm -rf compound.js/node_modules
 
 # Connect
 ###
