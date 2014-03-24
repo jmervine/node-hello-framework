@@ -139,13 +139,13 @@ Free server framework for building Web sites and Web applications using JavaScri
 
 Koa is a new web framework designed by the team behind Express, which aims to be a smaller, more expressive, and more robust foundation for web applications and APIs. Through leveraging generators Koa allows you to ditch callbacks and greatly increase error-handling. Koa does not bundle any middleware within core, and provides an elegant suite of methods that make writing servers fast and enjoyable.
 
-**Sample code exists but is disabled as it's un-tested at this time due to it's node >=0.11 requirement.**
+> Sample code exists but is disabled as it's un-tested at this time due to it's node >=0.11 requirement.
 
 ### [Tower][tower]
 
 Small components for building apps, manipulating data, and automating a distributed infrastructure.
 
-**Sample code exists but is disabled as it's un-tested at this time due to it's node >=0.11 requirement.**
+> Sample code exists but is disabled as it's un-tested at this time due to it's node >=0.11 requirement.
 
 ----
 
@@ -157,25 +157,31 @@ Here's a list of frameworks that were omitted for various reason. This could als
 
 Bone.io is a lightweight framework for building high performance Realtime Single Page HTML5 Apps.
 
-**Bone.io has been omitted at this time, as I found it's documentation to be so unclear, that I after about an hour, I gave up on getting a simple example working.**
+> Bone.io has been omitted at this time, as I found it's documentation to be so unclear, that I after about an hour, I gave up on getting a simple example working.
+
+### [Kiss.js][kissjs]
+
+Object-oriented web framework on Node.js, written in CoffeeScript.
+
+> Kiss.js has been omitted at this time, as it doesn't work without [coffescript], which I don't consider real node, and therefore am not supporting here in this repo.
 
 ### [Derby][derby]
 
 MVC framework making it easy to write realtime, collaborative applications that run in both Node.js and browsers.
 
-**Derby has been omitted at this time, as a pure npm install is either unsupported, as it requires [Redis] and/or [MongoDB].**
+> Derby has been omitted at this time, as a pure npm install is either unsupported, as it requires [Redis] and/or [MongoDB].
 
 ### [Meteor][meteor]
 
 Meteor is an open-source platform for building top-quality web apps in a fraction of the time, whether you're an expert developer or just getting started.
 
-**Meteor has been omitted at this time, as a pure npm install is either unsupported or broken.**
+> Meteor has been omitted at this time, as a pure npm install is either unsupported or broken.
 
 ### [Opa][opa]
 
 Opa is a full-stack open source web development framework for JavaScript that lets you write secure and scalable web applications.
 
-**Opa has been omitted at this time, as a pure npm install is either unsupported or broken.**
+> Opa has been omitted at this time, as a pure npm install is either unsupported or broken.
 
 
 [connect]: http://www.senchalabs.org/connect/
@@ -197,6 +203,7 @@ Opa is a full-stack open source web development framework for JavaScript that le
 
 [boneio]: http://bone.io/
 [derby]: http://derbyjs.com/
+[kissjs]: http://stanislavfeldman.github.io/kiss.js/
 [meteor]: https://www.meteor.com/
 [opa]: http://opalang.org/
 
@@ -205,3 +212,4 @@ Opa is a full-stack open source web development framework for JavaScript that le
 [MongoDB]: https://www.mongodb.org/
 [Sinatra]: http://www.sinatrarb.com/
 [spine zip]: http://spinejs.com/pages/download
+[coffeescript]: http://coffeescript.org/
