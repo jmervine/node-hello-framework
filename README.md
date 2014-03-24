@@ -153,17 +153,23 @@ Small components for building apps, manipulating data, and automating a distribu
 
 Here's a list of frameworks that were omitted for various reason. This could also be considered an extension of the TODO list.
 
-### [Meteor][meteor]
+### [Bone.io][boneio]
 
-Meteor is an open-source platform for building top-quality web apps in a fraction of the time, whether you're an expert developer or just getting started.
+Bone.io is a lightweight framework for building high performance Realtime Single Page HTML5 Apps.
 
-**Meteor has been omitted at this time, as a pure npm install is either unsupported or broken.**
+**Bone.io has been omitted at this time, as I found it's documentation to be so unclear, that I after about an hour, I gave up on getting a simple example working.**
 
 ### [Derby][derby]
 
 MVC framework making it easy to write realtime, collaborative applications that run in both Node.js and browsers.
 
 **Derby has been omitted at this time, as a pure npm install is either unsupported, as it requires [Redis] and/or [MongoDB].**
+
+### [Meteor][meteor]
+
+Meteor is an open-source platform for building top-quality web apps in a fraction of the time, whether you're an expert developer or just getting started.
+
+**Meteor has been omitted at this time, as a pure npm install is either unsupported or broken.**
 
 ### [Opa][opa]
 
@@ -188,8 +194,10 @@ Opa is a full-stack open source web development framework for JavaScript that le
 
 [koa]: http://koajs.com/
 [tower]: http://tower.github.io/
-[meteor]: https://www.meteor.com/
+
+[boneio]: http://bone.io/
 [derby]: http://derbyjs.com/
+[meteor]: https://www.meteor.com/
 [opa]: http://opalang.org/
 
 [union module]: https://www.npmjs.org/package/union
