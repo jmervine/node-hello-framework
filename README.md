@@ -44,6 +44,7 @@ A far from complete collection of Hello World examples for various Node.js web f
 * [spine](#spine)
 * [stapes](#stapes)
 * [totaljs](#totaljs)
+* [webjs](#webjs)
 
 ## Framework Notes
 
@@ -187,6 +188,10 @@ Stapes.js is designed to be agnostic about your setup and style of coding. Like 
 
 Free server framework for building Web sites and Web applications using JavaScript, HTML and CSS.
 
+### [WebJS][webjs]
+
+WebJS makes your websites' and web apps' server-side script simplier, faster, more stable and more readable.
+
 ----
 
 ## In Flux
@@ -263,6 +268,7 @@ Opa is a full-stack open source web development framework for JavaScript that le
 [spine]: http://spinejs.com/
 [stapes]: http://hay.github.io/stapes/
 [totaljs]: http://www.totaljs.com/
+[webjs]: http://iwillwen.github.io/webjs/
 
 [koa]: http://koajs.com/
 [tower]: http://tower.github.io/

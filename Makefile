@@ -58,6 +58,18 @@ clean/geddy: .PHONY
 	-rm node_modules/.bin/geddy
 	-rm -rf node_modules/geddy
 
+# Hapi
+###
+hapi: node_modules/hapi .PHONY
+	node hapi
+
+node_modules/hapi:
+	npm install hapi
+
+clean/hapi:
+	-rm -rf node_modules/hapi
+	-rm -rf node_modules/.bin/hapi
+
 # Flatiron
 ###
 flatiron: node_modules/flatiron node_modules/union .PHONY
@@ -183,18 +195,6 @@ stapes: .PHONY
 clean/stapes:
 	@echo "no clean actions required"
 
-# Hapi
-###
-hapi: node_modules/hapi .PHONY
-	node hapi
-
-node_modules/hapi:
-	npm install hapi
-
-clean/hapi:
-	-rm -rf node_modules/hapi
-	-rm -rf node_modules/.bin/hapi
-
 # TotalJS
 ###
 total.js: node_modules/total.js .PHONY
@@ -206,6 +206,18 @@ node_modules/total.js:
 clean/total.js:
 	-rm -rf node_modules/total.js
 	-rm -rf node_modules/.bin/total
+
+# WebJS
+###
+webjs: node_modules/webjs .PHONY
+	node webjs
+
+node_modules/webjs:
+	npm install webjs
+
+clean/webjs:
+	-rm -rf node_modules/webjs
+	-rm -rf node_modules/.bin/webjs
 
 # Koa
 ###
