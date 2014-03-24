@@ -251,41 +251,41 @@ Opa is a full-stack open source web development framework for JavaScript that le
 > Opa has been omitted at this time, as a pure npm install is either unsupported or broken.
 
 
-[compound.js]   :  http://compoundjs.com/
-[connect]       :  http://www.senchalabs.org/connect/
-[express]       :  http://expressjs.com/
-[flatiron]      :  http://flatironjs.org/
-[geddy]         :  http://geddyjs.org/
-[hapi]          :  http://spumko.github.io/
-[locomotive]    :  http://locomotivejs.org/
-[ni]            :  https://github.com/chetan51/ni
-[nombo]         :  http://nombo.io/
-[partialjs]     :  http://www.partialjs.com/
-[partial.js]    :  http://www.partialjs.com/
-[restify]       :  http://mcavage.me/node-restify/
-[socketstream]  :  http://www.socketstream.org/
-[socketio]      :  http://socket.io/
-[spine]         :  http://spinejs.com/
-[stapes]        :  http://hay.github.io/stapes/
-[totaljs]       :  http://www.totaljs.com/
-[webjs]         :  http://iwillwen.github.io/webjs/
+[compound.js]: http://compoundjs.com/
+[connect]: http://www.senchalabs.org/connect/
+[express]: http://expressjs.com/
+[flatiron]: http://flatironjs.org/
+[geddy]: http://geddyjs.org/
+[hapi]: http://spumko.github.io/
+[locomotive]: http://locomotivejs.org/
+[ni]: https://github.com/chetan51/ni
+[nombo]: http://nombo.io/
+[partialjs]: http://www.partialjs.com/
+[partial.js]: http://www.partialjs.com/
+[restify]: http://mcavage.me/node-restify/
+[socketstream]: http://www.socketstream.org/
+[socketio]: http://socket.io/
+[spine]: http://spinejs.com/
+[stapes]: http://hay.github.io/stapes/
+[totaljs]: http://www.totaljs.com/
+[webjs]: http://iwillwen.github.io/webjs/
 
-[koa]           :  http://koajs.com/
-[tower]         :  http://tower.github.io/
+[koa]: http://koajs.com/
+[tower]: http://tower.github.io/
 
-[boneio]        :  http://bone.io/
-[coke]          :  http://coke-js.org/
-[derby]         :  http://derbyjs.com/
-[kissjs]        :  http://stanislavfeldman.github.io/kiss.js/
-[meteor]        :  https://www.meteor.com/
-[opa]           :  http://opalang.org/
+[boneio]: http://bone.io/
+[coke]: http://coke-js.org/
+[derby]: http://derbyjs.com/
+[kissjs]: http://stanislavfeldman.github.io/kiss.js/
+[meteor]: https://www.meteor.com/
+[opa]: http://opalang.org/
 
-[union module]  :  https://www.npmjs.org/package/union
-[Redis]         :  http://redis.io/
-[MongoDB]       :  https://www.mongodb.org/
-[Sinatra]       :  http://www.sinatrarb.com/
-[spine zip]     :  http://spinejs.com/pages/download
-[coffeescript]  :  http://coffeescript.org/
-[stapes.min.js] :  https://raw.githubusercontent.com/hay/stapes/master/stapes.min.js
-[Github]        :  https://github.com/
+[union module]: https://www.npmjs.org/package/union
+[Redis]: http://redis.io/
+[MongoDB]: https://www.mongodb.org/
+[Sinatra]: http://www.sinatrarb.com/
+[spine zip]: http://spinejs.com/pages/download
+[coffeescript]: http://coffeescript.org/
+[stapes.min.js]: https://raw.githubusercontent.com/hay/stapes/master/stapes.min.js
+[Github]: https://github.com/
 
