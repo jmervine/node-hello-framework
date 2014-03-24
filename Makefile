@@ -145,6 +145,18 @@ clean/hapi:
 	-rm -rf node_modules/hapi
 	-rm -rf node_modules/.bin/hapi
 
+# TotalJS
+###
+total.js: node_modules/total.js .PHONY
+	node total.js
+
+node_modules/total.js:
+	npm install total.js
+
+clean/total.js:
+	-rm -rf node_modules/total.js
+	-rm -rf node_modules/.bin/total
+
 # Koa
 ###
 koa: .PHONY

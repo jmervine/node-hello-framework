@@ -28,17 +28,17 @@ A far from complete collection of Hello World examples for various Node.js web f
 
 ## Frameworks:
 
-* [connect]
-* [express]
-* [geddy]
-* [flatiron]
-* [locomotive]
-* [nombo]
-* [partial.js]
-* [socketstream]
-* [socket.io]
-* [spine]
-* [hapi]
+* [connect](#connect)
+* [express](#express)
+* [flatiron](#flatiron)
+* [geddy](#geddy)
+* [hapi](#hapi)
+* [locomotive](#locomotive)
+* [nombo](#nombo)
+* [partial.js](#partialjs)
+* [socketstream](#stocketstream)
+* [socket.io](#stockio)
+* [spine](#spine)
 
 ## Framework Notes
 
@@ -52,6 +52,14 @@ Connect is a middleware framework for node, shipping with over 18 bundled middle
 
 A [Sinatra] like router for node, which includes a [connect], as simple node middleware implementation.
 
+### [Flatiron][flatiron]
+
+An adaptable framework for building modern web applications.
+
+#### Additional Notes
+
+> I addtion to the flatiron module, I also had to install the [union module] to get the example to work.
+
 ### [Geddy][geddy]
 
 A simple, structured web framework for Node
@@ -63,13 +71,9 @@ A simple, structured web framework for Node
     cd geddy
     ../node_modules/.bin/geddy
 
-### [Flatiron][flatiron]
+### [Hapi][hapi]
 
-An adaptable framework for building modern web applications.
-
-#### Additional Notes
-
-> I addtion to the flatiron module, I also had to install the [union module] to get the example to work.
+A rich framework for building web applications and services. hapi is a simple to use configuration-centric framework with built-in support for input validation, caching, authentication, and other essential facilities. hapi enables developers to focus on writing reusable application logic instead of spending time building infrastructure. The framework supports a powerful plugin architecture for pain-free and scalable extensibility.
 
 ### [Locomotive][locomotive]
 
@@ -94,6 +98,10 @@ Nombo is a Node.js framework for building scalable realtime single-page apps.
         # ^ WARNING: this will overwrite existing node_modules
     node nombo/server.node 3000
 
+### [PartialJS][partialjs]
+
+Free web application framework for building Web sites and Web applications using JavaScript, HTML and CSS. From web developer for web developers.
+
 ### [SocketStream][socketstream]
 
 A fast, modular Node.js web framework dedicated to building realtime single-page apps.
@@ -106,6 +114,10 @@ A fast, modular Node.js web framework dedicated to building realtime single-page
     npm install
     node app.js
 
+### [SocketIO][socketio]
+
+Socket.IO aims to make realtime apps possible in every browser and mobile device, blurring the differences between the different transport mechanisms. It's care-free realtime 100% in JavaScript.
+
 ### [Spine][spine]
 
 Spine is a lightweight framework for building JavaScript web applications. Spine gives you an MVC structure and then gets out of your way, allowing you to concentrate on the fun stuff, building awesome web applications.
@@ -114,9 +126,9 @@ Spine is a lightweight framework for building JavaScript web applications. Spine
 
 > As Spine is a client side framework, I simply downloaded and extracted [the spine zip file][spine zip]. I then removed all contents not used for this example.
 
-### [Hapi][hapi]
+### [TotalJS][totaljs]
 
-A rich framework for building web applications and services. hapi is a simple to use configuration-centric framework with built-in support for input validation, caching, authentication, and other essential facilities. hapi enables developers to focus on writing reusable application logic instead of spending time building infrastructure. The framework supports a powerful plugin architecture for pain-free and scalable extensibility.
+Free server framework for building Web sites and Web applications using JavaScript, HTML and CSS.
 
 ----
 
@@ -170,6 +182,7 @@ Opa is a full-stack open source web development framework for JavaScript that le
 [socket.io]: http://socket.io/
 [spine]: http://spinejs.com/
 [hapi]: http://spumko.github.io/
+[totaljs]: http://www.totaljs.com/
 
 [koa]: http://koajs.com/
 [tower]: http://tower.github.io/
