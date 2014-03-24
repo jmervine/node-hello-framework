@@ -133,6 +133,14 @@ spine: .PHONY
 clean/spine:
 	@echo "no clean actions required"
 
+# Stapes
+###
+stapes: .PHONY
+	node stapes
+
+clean/stapes:
+	@echo "no clean actions required"
+
 # Hapi
 ###
 hapi: node_modules/hapi .PHONY

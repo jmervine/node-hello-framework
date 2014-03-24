@@ -39,6 +39,7 @@ A far from complete collection of Hello World examples for various Node.js web f
 * [socketstream](#stocketstream)
 * [socket.io](#stockio)
 * [spine](#spine)
+* [stapes](#stapes)
 * [totaljs](#totaljs)
 
 ## Framework Notes
@@ -131,6 +132,18 @@ Spine is a lightweight framework for building JavaScript web applications. Spine
 
 Free server framework for building Web sites and Web applications using JavaScript, HTML and CSS.
 
+### [Stapes][stapes]
+
+Stapes.js is designed to be agnostic about your setup and style of coding. Like to code using models, views and controllers? Or just with modules? Use jQuery? Zepto? React? Rivets? Whatever you fancy, Stapes gives you the necessary building blocks to build a kick-ass app. Class creation, custom events, and data methods. That's all it does. Even a lightweight framework like Backbone has more than 75 methods, Stapes has just 20. Because of its size (just 2kb minified and gzipped) Stapes is ideal to use in a mobile site. At just around 600 lines of codes, it's easy to debug and see how it works under the hood.
+
+#### Additional Notes
+
+> As Stapes is a client side framework, I simply downloaded [stapes.min.js] from [Github].
+
+### [TotalJS][totaljs]
+
+Free server framework for building Web sites and Web applications using JavaScript, HTML and CSS.
+
 ----
 
 ## In Flux
@@ -202,6 +215,7 @@ Opa is a full-stack open source web development framework for JavaScript that le
 [socketstream]: http://www.socketstream.org/
 [socketio]: http://socket.io/
 [spine]: http://spinejs.com/
+[stapes]: http://hay.github.io/stapes/
 [totaljs]: http://www.totaljs.com/
 
 [koa]: http://koajs.com/
@@ -220,3 +234,6 @@ Opa is a full-stack open source web development framework for JavaScript that le
 [Sinatra]: http://www.sinatrarb.com/
 [spine zip]: http://spinejs.com/pages/download
 [coffeescript]: http://coffeescript.org/
+[stapes.min.js]: https://raw.githubusercontent.com/hay/stapes/master/stapes.min.js
+[Github]: https://github.com/
+

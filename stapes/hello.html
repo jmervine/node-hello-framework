@@ -1,0 +1,23 @@
+<html>
+    <head>
+<!--
+    Stape recommends using jQuery and so do I, however, to keep this
+    example as simple as possible, I'm using pure javascript.
+-->
+
+        <script src="lib/stapes.min.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            // stape module
+            var Module = Stapes.subclass({
+                hello: function() {
+                    document.getElementById("hello").innerHTML = "Hello Stape!";
+                }
+            });
+
+            var module = new Module('hello');
+        </script>
+    </head>
+    <body onload="module.hello()">
+        <div id="hello"></div>
+    </body>
+</html>
