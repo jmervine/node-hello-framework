@@ -110,6 +110,18 @@ clean/partial.js: .PHONY
 	-rm -rf node_modules/partial.js
 	-rm -rf node_modules/.bin/partial.js
 
+# Restify
+###
+restify: node_modules/restify .PHONY
+	node restify
+
+node_modules/restify:
+	npm install restify
+
+clean/restify:
+	-rm -rf node_modules/restify
+	-rm -rf node_modules/.bin/restify-latency
+
 # SocketStream
 ###
 socketstream: node_modules/socketstream socketstream/node_modules .PHONY

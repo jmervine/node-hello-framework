@@ -37,6 +37,7 @@ A far from complete collection of Hello World examples for various Node.js web f
 * [ni](#ni)
 * [nombo](#nombo)
 * [partial.js](#partialjs)
+* [restify](#restify)
 * [socketstream](#stocketstream)
 * [socket.io](#stockio)
 * [spine](#spine)
@@ -115,6 +116,10 @@ Nombo is a Node.js framework for building scalable realtime single-page apps.
 ### [PartialJS][partialjs]
 
 Free web application framework for building Web sites and Web applications using JavaScript, HTML and CSS. From web developer for web developers.
+
+### [Restify][restify]
+
+Restify is a node.js module built specifically to enable you to build correct REST web services. It intentionally borrows heavily from express as that is more or less the de facto API for writing web applications on top of node.js.
 
 ### [SocketStream][socketstream]
 
@@ -225,6 +230,7 @@ Opa is a full-stack open source web development framework for JavaScript that le
 [nombo]: http://nombo.io/
 [partialjs]: http://www.partialjs.com/
 [partial.js]: http://www.partialjs.com/
+[restify]: http://mcavage.me/node-restify/
 [socketstream]: http://www.socketstream.org/
 [socketio]: http://socket.io/
 [spine]: http://spinejs.com/
