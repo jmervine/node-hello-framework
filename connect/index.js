@@ -1,16 +1,17 @@
 #!/usr/bin/env node
 'use strict';
 
-var http = require('http');
+//var http = require('http');
 var connect = require('connect');
 
 var port = 3000;
-var app = connect()
-    .use(function(req, res){
-        res.end('Hello Connect!\n');
-    });
+var app = connect();
 
-http.createServer(app).listen(port, function() {
+app.use(function(req, res){
+    res.end('Hello Connect!\n');
+});
+
+app.listen(port, function() {
     console.log('Listening on port %d', port);
 });
 

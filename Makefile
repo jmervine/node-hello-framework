@@ -72,6 +72,18 @@ clean/locomotive: .PHONY
 	-rm -rf node_modules/.bin/lcm
 	-rm -rf locomotive/node_modules
 
+# Ni
+###
+ni: node_modules/ni node_modules/connect .PHONY
+	node ni
+
+node_modules/ni:
+	npm install "git+https://github.com/chetan51/ni.git#master"
+
+clean/ni: clean/connect
+	-rm -rf node_modules/ni
+	-rm -rf node_modules/.bin/ni
+
 # Nombo
 ###
 nombo: node_modules/nombo/.bin/nombo .PHONY

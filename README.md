@@ -34,6 +34,7 @@ A far from complete collection of Hello World examples for various Node.js web f
 * [geddy](#geddy)
 * [hapi](#hapi)
 * [locomotive](#locomotive)
+* [ni](#ni)
 * [nombo](#nombo)
 * [partial.js](#partialjs)
 * [socketstream](#stocketstream)
@@ -88,6 +89,17 @@ Locomotive is a web framework for Node.js. Locomotive supports MVC patterns, RES
     cd locomotive
     npm install
     ./node_modules/.bin/lcm server
+
+### [Ni][ni]
+
+Ni a minimalistic Node framework that makes setting up an MVC project a breeze. Ni helps you set up a well-organized project, with a file structure separated into models, views, controllers, libraries and helpers. It's intuitive and simple to use, and doesn't get in the way of using other modules and Node plugins in your project.
+
+#### Additional Notes
+
+> Ni needs to be installed via [Github].
+
+    npm install "git+https://github.com/chetan51/ni.git#master"
+
 
 ### [Nombo][nombo]
 
@@ -209,6 +221,7 @@ Opa is a full-stack open source web development framework for JavaScript that le
 [geddy]: http://geddyjs.org/
 [hapi]: http://spumko.github.io/
 [locomotive]: http://locomotivejs.org/
+[ni]: https://github.com/chetan51/ni
 [nombo]: http://nombo.io/
 [partialjs]: http://www.partialjs.com/
 [partial.js]: http://www.partialjs.com/
