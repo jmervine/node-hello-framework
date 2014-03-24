@@ -151,13 +151,19 @@ Small components for building apps, manipulating data, and automating a distribu
 
 ## Omitted
 
-Here's a list of frameworks that were omitted for various reason. This could also be considered an extension of the TODO list.
+Here's a list of frameworks that were omitted for various reason.
 
 ### [Bone.io][boneio]
 
 Bone.io is a lightweight framework for building high performance Realtime Single Page HTML5 Apps.
 
 > Bone.io has been omitted at this time, as I found it's documentation to be so unclear, that I after about an hour, I gave up on getting a simple example working.
+
+### [Coke][coke]
+
+"COKE is a lightweight node.js MVC framework that speeds up your web development. It's simple, it's modularized, it's somking fast!"
+
+> Coke has been omitted at this time, as a pure npm install is either unsupported, it requires [MongoDB].
 
 ### [Kiss.js][kissjs]
 
@@ -169,7 +175,7 @@ Object-oriented web framework on Node.js, written in CoffeeScript.
 
 MVC framework making it easy to write realtime, collaborative applications that run in both Node.js and browsers.
 
-> Derby has been omitted at this time, as a pure npm install is either unsupported, as it requires [Redis] and/or [MongoDB].
+> Derby has been omitted at this time, as a pure npm install is either unsupported, it requires [MongoDB].
 
 ### [Meteor][meteor]
 
@@ -202,6 +208,7 @@ Opa is a full-stack open source web development framework for JavaScript that le
 [tower]: http://tower.github.io/
 
 [boneio]: http://bone.io/
+[coke]: http://coke-js.org/
 [derby]: http://derbyjs.com/
 [kissjs]: http://stanislavfeldman.github.io/kiss.js/
 [meteor]: https://www.meteor.com/
