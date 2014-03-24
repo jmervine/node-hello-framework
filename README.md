@@ -28,7 +28,7 @@ A far from complete collection of Hello World examples for various Node.js web f
 
 ## Frameworks:
 
-* [compound.js](#compound.js)
+* [compound.js](#compoundjs)
 * [connect](#connect)
 * [express](#express)
 * [flatiron](#flatiron)
