@@ -173,15 +173,16 @@ Opa is a full-stack open source web development framework for JavaScript that le
 
 [connect]: http://www.senchalabs.org/connect/
 [express]: http://expressjs.com/
-[geddy]: http://geddyjs.org/
 [flatiron]: http://flatironjs.org/
+[geddy]: http://geddyjs.org/
+[hapi]: http://spumko.github.io/
 [locomotive]: http://locomotivejs.org/
 [nombo]: http://nombo.io/
+[partialjs]: http://www.partialjs.com/
 [partial.js]: http://www.partialjs.com/
 [socketstream]: http://www.socketstream.org/
-[socket.io]: http://socket.io/
+[socketio]: http://socket.io/
 [spine]: http://spinejs.com/
-[hapi]: http://spumko.github.io/
 [totaljs]: http://www.totaljs.com/
 
 [koa]: http://koajs.com/
