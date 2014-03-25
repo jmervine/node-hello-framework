@@ -50,6 +50,7 @@ A far from complete collection of Hello World examples for various Node.js web f
 
 Along with a short description, included are notes on extra steps -- aside from the `<framework>/index.js` example file, if any.
 
+<a name="compoundjs"></a>
 ### [Compound.js][compound.js]
 
 Compound's formula is Express + structure + extensions. Where structure is the standard layout of directories, and extensions are node modules adding functionality to the framework. Compound's goal is to provide an obvious and well-organized interface for express compatible application development. This means that everything that works with express will work with compound.
@@ -75,14 +76,17 @@ Compound's formula is Express + structure + extensions. Where structure is the s
 
     node server.js
 
+<a name="connect"></a>
 ### [Connect][connect]
 
 Connect is a middleware framework for node, shipping with over 18 bundled middleware and a rich selection of 3rd-party middleware.
 
+<a name="express"></a>
 ### [Express][express]
 
 A [Sinatra] like router for node, which includes a [connect], as simple node middleware implementation.
 
+<a name="flatiron"></a>
 ### [Flatiron][flatiron]
 
 An adaptable framework for building modern web applications.
@@ -91,6 +95,7 @@ An adaptable framework for building modern web applications.
 
 > I addtion to the flatiron module, I also had to install the [union module] to get the example to work.
 
+<a name="geddy"></a>
 ### [Geddy][geddy]
 
 A simple, structured web framework for Node
@@ -102,10 +107,12 @@ A simple, structured web framework for Node
     cd geddy
     ../node_modules/.bin/geddy
 
+<a name="hapi"></a>
 ### [Hapi][hapi]
 
 A rich framework for building web applications and services. hapi is a simple to use configuration-centric framework with built-in support for input validation, caching, authentication, and other essential facilities. hapi enables developers to focus on writing reusable application logic instead of spending time building infrastructure. The framework supports a powerful plugin architecture for pain-free and scalable extensibility.
 
+<a name="locomotive"></a>
 ### [Locomotive][locomotive]
 
 Locomotive is a web framework for Node.js. Locomotive supports MVC patterns, RESTful routes, and convention over configuration, while integrating seamlessly with any database and template engine. Locomotive builds on [Express][express], preserving the power and simplicity you've come to expect from Node.
@@ -118,6 +125,7 @@ Locomotive is a web framework for Node.js. Locomotive supports MVC patterns, RES
     npm install
     ./node_modules/.bin/lcm server
 
+<a name="ni"></a>
 ### [Ni][ni]
 
 Ni a minimalistic Node framework that makes setting up an MVC project a breeze. Ni helps you set up a well-organized project, with a file structure separated into models, views, controllers, libraries and helpers. It's intuitive and simple to use, and doesn't get in the way of using other modules and Node plugins in your project.
@@ -129,6 +137,7 @@ Ni a minimalistic Node framework that makes setting up an MVC project a breeze. 
     npm install "git+https://github.com/chetan51/ni.git#master"
 
 
+<a name="nombo"></a>
 ### [Nombo][nombo]
 
 Nombo is a Node.js framework for building scalable realtime single-page apps.
@@ -140,14 +149,17 @@ Nombo is a Node.js framework for building scalable realtime single-page apps.
         # ^ WARNING: this will overwrite existing node_modules
     node nombo/server.node 3000
 
+<a name="partialjs"></a>
 ### [PartialJS][partialjs]
 
 Free web application framework for building Web sites and Web applications using JavaScript, HTML and CSS. From web developer for web developers.
 
+<a name="restify"></a>
 ### [Restify][restify]
 
 Restify is a node.js module built specifically to enable you to build correct REST web services. It intentionally borrows heavily from express as that is more or less the de facto API for writing web applications on top of node.js.
 
+<a name="socketstream"></a>
 ### [SocketStream][socketstream]
 
 A fast, modular Node.js web framework dedicated to building realtime single-page apps.
@@ -160,10 +172,12 @@ A fast, modular Node.js web framework dedicated to building realtime single-page
     npm install
     node app.js
 
+<a name="socketio"></a>
 ### [SocketIO][socketio]
 
 Socket.IO aims to make realtime apps possible in every browser and mobile device, blurring the differences between the different transport mechanisms. It's care-free realtime 100% in JavaScript.
 
+<a name="spine"></a>
 ### [Spine][spine]
 
 Spine is a lightweight framework for building JavaScript web applications. Spine gives you an MVC structure and then gets out of your way, allowing you to concentrate on the fun stuff, building awesome web applications.
@@ -172,10 +186,12 @@ Spine is a lightweight framework for building JavaScript web applications. Spine
 
 > As Spine is a client side framework, I simply downloaded and extracted [the spine zip file][spine zip]. I then removed all contents not used for this example.
 
+<a name="totaljs"></a>
 ### [TotalJS][totaljs]
 
 Free server framework for building Web sites and Web applications using JavaScript, HTML and CSS.
 
+<a name="stapes"></a>
 ### [Stapes][stapes]
 
 Stapes.js is designed to be agnostic about your setup and style of coding. Like to code using models, views and controllers? Or just with modules? Use jQuery? Zepto? React? Rivets? Whatever you fancy, Stapes gives you the necessary building blocks to build a kick-ass app. Class creation, custom events, and data methods. That's all it does. Even a lightweight framework like Backbone has more than 75 methods, Stapes has just 20. Because of its size (just 2kb minified and gzipped) Stapes is ideal to use in a mobile site. At just around 600 lines of codes, it's easy to debug and see how it works under the hood.
@@ -184,10 +200,12 @@ Stapes.js is designed to be agnostic about your setup and style of coding. Like 
 
 > As Stapes is a client side framework, I simply downloaded [stapes.min.js] from [Github].
 
+<a name="totaljs"></a>
 ### [TotalJS][totaljs]
 
 Free server framework for building Web sites and Web applications using JavaScript, HTML and CSS.
 
+<a name="webjs"></a>
 ### [WebJS][webjs]
 
 WebJS makes your websites' and web apps' server-side script simplier, faster, more stable and more readable.
