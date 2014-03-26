@@ -40,8 +40,8 @@ A far from complete collection of Hello World examples for various Node.js web f
 * [partial.js](#partialjs)
 * [restify](#restify)
 * [sails.js](#sailsjs)
-* [socketstream](#stocketstream)
-* [socket.io](#stockio)
+* [socketstream](#socketstream)
+* [socket.io](#socketio)
 * [spine](#spine)
 * [stapes](#stapes)
 * [totaljs](#totaljs)
@@ -308,6 +308,7 @@ Opa is a full-stack open source web development framework for JavaScript that le
 [partialjs]: http://www.partialjs.com/
 [partial.js]: http://www.partialjs.com/
 [restify]: http://mcavage.me/node-restify/
+[sailsjs]: http://sailsjs.org/
 [socketstream]: http://www.socketstream.org/
 [socketio]: http://socket.io/
 [spine]: http://spinejs.com/
