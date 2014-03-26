@@ -3,8 +3,9 @@ ROOT=$(shell pwd)
 # Global Tasks
 ###
 clean: clean/locomotive \
-			clean/socketstream \
-			clean/compound.js
+		clean/socketstream \
+		clean/compound.js \
+		clean/sails.js
 	-rm -rf node_modules
 
 # CompoundJS
@@ -151,6 +152,22 @@ node_modules/restify:
 clean/restify:
 	-rm -rf node_modules/restify
 	-rm -rf node_modules/.bin/restify-latency
+
+# Sails
+###
+sails.js: node_modules/sails sails.js/node_modules .PHONY
+	cd sails.js; node ../node_modules/.bin/sails lift
+
+node_modules/sails:
+	-npm install sails
+
+sails.js/node_modules:
+	cd sails.js; npm install
+
+clean/sails.js:
+	-rm -rf node_modules/sails
+	-rm -rf node_modules/.bin/sails
+	-rm -rf sails.js/node_modules
 
 # SocketStream
 ###

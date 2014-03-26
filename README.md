@@ -39,6 +39,7 @@ A far from complete collection of Hello World examples for various Node.js web f
 * [nombo](#nombo)
 * [partial.js](#partialjs)
 * [restify](#restify)
+* [sails.js](#sailsjs)
 * [socketstream](#stocketstream)
 * [socket.io](#stockio)
 * [spine](#spine)
@@ -158,6 +159,32 @@ Free web application framework for building Web sites and Web applications using
 ### [Restify][restify]
 
 Restify is a node.js module built specifically to enable you to build correct REST web services. It intentionally borrows heavily from express as that is more or less the de facto API for writing web applications on top of node.js.
+
+<a name="sailsjs"></a>
+### [Sails.js][sailsjs]
+
+Sails.js make it easy to build custom, enterprise-grade Node.js apps. It is designed to mimic the MVC pattern of frameworks like Ruby on Rails, but with support for the requirements of modern apps: data-driven APIs with scalable, service-oriented architecture. It's especially good for building chat, realtime dashboards, or multiplayer games.
+
+#### Additional Notes
+
+> To setup sail.js, as it's a generated framework, I did the following...
+
+    npm install sails
+    ./node_modules/.bin/compound init sails.js
+    cd sails.js
+    npm install
+    ../node_modules/.bin/sails generate hello
+
+> I then...
+>
+> * Added `views/hello/index.ejs` to display the hello message.
+> * Updated `api/controllers/HelloController.js` to send the hello message.
+> * Updated `config/routes.js` to point the main location to the hello controller.
+> * Updated `config/local.js` to use port 3000 by default.
+>
+> Once complete, I...
+
+    ../node_modules/.bin/sails lift
 
 <a name="socketstream"></a>
 ### [SocketStream][socketstream]
