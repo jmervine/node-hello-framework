@@ -53,7 +53,7 @@ A far from complete collection of Hello World examples for various Node.js web f
 Along with a short description, included are notes on extra steps -- aside from the `<framework>/index.js` example file, if any.
 
 <a name="nodejs"></a>
-### [Node.js][nodejs]
+### [Node.js][node.js]
 
 This isn't a framework. This is a slightly expanded "Hello World" example where I created a simple http server which loads static files from a public directory if they exist and otherwise returns a message via the response. I wanted to be a pure node example, without any npm installed, as such I didn't include template rendering, but the addition of such wouldn't be difficult. I've included a commented out example of how to easily add [jade][jade] templating to this example.
 
@@ -301,7 +301,7 @@ Opa is a full-stack open source web development framework for JavaScript that le
 
 > Opa has been omitted at this time, as a pure npm install is either unsupported or broken.
 
-
+[node.js]: http://nodejs.org/api/http.html
 [compound.js]: http://compoundjs.com/
 [connect]: http://www.senchalabs.org/connect/
 [express]: http://expressjs.com/
