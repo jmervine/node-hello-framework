@@ -37,6 +37,18 @@ var Config = {
         ico     : 'image/x-icon',
         json    : 'application/json'
     }
+
+    // I've chose not to use npm's in this example, but were I to,
+    // I would install mime - npm install mime - and replace the
+    // types object above with something like this:
+    //
+    // types: function(type) {
+    //     return require('mime').lookup(type)
+    // }
+    //
+    // usage:
+    //
+    // Config.types(try_path); /* see below for try_path */
 };
 
 // initialize http server

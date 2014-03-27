@@ -2,12 +2,12 @@ ROOT=$(shell pwd)
 
 # Global Tasks
 ###
-clean: clean/locomotive \
+clean: clean/locomotive.js \
 		clean/socketstream \
 		clean/compound.js \
 		clean/sails.js
 	-rm -rf node_modules
-
+	-npm cache clean
 
 # Node.js
 ###
@@ -104,10 +104,10 @@ locomotive.js: node_modules/locomotive/.bin/lcm locomotive.js/node_modules .PHON
 node_modules/locomotive/.bin/lcm:
 	npm install locomotive
 
-locomotive/node_modules:
-	cd locomotive; npm install
+locomotive.js/node_modules:
+	cd locomotive.js; npm install
 
-clean/locomotive: .PHONY
+clean/locomotive.js: .PHONY
 	-rm -rf node_modules/locomotive
 	-rm -rf node_modules/.bin/lcm
 	-rm -rf locomotive.js/node_modules
