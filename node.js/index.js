@@ -48,7 +48,7 @@ var Config = {
     //
     // usage:
     //
-    // Config.types(try_path); /* see below for try_path */
+    // res.setHeader('Content-Type', Config.types(try_path)); /* see below for try_path */
 };
 
 // initialize http server
