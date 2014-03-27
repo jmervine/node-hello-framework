@@ -4,7 +4,7 @@
 /*****************************************************************
  * At the core most, if not all nodejs frameworks are extensions
  * of node's core http module, coupled with a few other core
- * modules (e.g. fs, util, etc.), put together ease implementation
+ * modules (e.g. fs, util, etc.), put together ease to implementation
  * and mask the internals. However, for most simple use cases,
  * a core http implementation will actually suffice. That said,
  * those of us who come from other languages, our knee jerk reaction
