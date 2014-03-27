@@ -28,6 +28,7 @@ A far from complete collection of Hello World examples for various Node.js web f
 
 ## Frameworks:
 
+* [node.js](#nodejs)
 * [compound.js](#compoundjs)
 * [connect](#connect)
 * [express](#express)
@@ -50,6 +51,11 @@ A far from complete collection of Hello World examples for various Node.js web f
 ## Framework Notes
 
 Along with a short description, included are notes on extra steps -- aside from the `<framework>/index.js` example file, if any.
+
+<a name="nodejs"></a>
+### [Node.js][nodejs]
+
+This isn't a framework. This is a slightly expanded "Hello World" example where I created a simple http server which loads static files from a public directory if they exist and otherwise returns a message via the response. I wanted to be a pure node example, without any npm installed, as such I didn't include template rendering, but the addition of such wouldn't be difficult. I've included a commented out example of how to easily add [jade][jade] templating to this example.
 
 <a name="compoundjs"></a>
 ### [Compound.js][compound.js]
@@ -326,6 +332,7 @@ Opa is a full-stack open source web development framework for JavaScript that le
 [meteor]: https://www.meteor.com/
 [opa]: http://opalang.org/
 
+[jade]: http://jade-lang.com/
 [union module]: https://www.npmjs.org/package/union
 [Redis]: http://redis.io/
 [MongoDB]: https://www.mongodb.org/

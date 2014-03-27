@@ -8,6 +8,15 @@ clean: clean/locomotive \
 		clean/sails.js
 	-rm -rf node_modules
 
+
+# Node.js
+###
+node.js: .PHONY
+	node node.js
+
+clean/node.js:
+	@echo "no clean actions required"
+
 # CompoundJS
 ###
 compound.js: node_modules/compound compound.js/node_modules .PHONY
