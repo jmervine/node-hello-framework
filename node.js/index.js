@@ -6,11 +6,11 @@
  * of node's core http module, coupled with a few other core
  * modules (e.g. fs, util, etc.), put together ease to implementation
  * and mask the internals. However, for most simple use cases,
- * a core http implementation will actually suffice. That said,
+ * a core http implementation will actually suffice. That said, for
  * those of us who come from other languages, our knee jerk reaction
  * is to gravitate towards frameworks.
  *
- * Here I cover "Hello Node!" in three different methods:
+ * Here I cover "Hello Node!" in two different methods:
  *
  * 1. Simply returning the message via http response to the request.
  *
