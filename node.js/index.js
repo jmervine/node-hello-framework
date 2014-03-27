@@ -27,7 +27,7 @@ var fs = require('fs');
 var path = require('path');
 
 // configuration
-var Config = {
+var config = {
     public: path.resolve(__dirname, 'public'),
 
     // Here I've build a simple list of mime types
@@ -100,7 +100,7 @@ function handler (req, res) {
              *
              **************************************************************/
 
-            // Config.views  = path.resolve(__dirname, 'views');
+            // config.views  = path.resolve(__dirname, 'views');
             //
             // var view_path = path.resolve(Config.views, req.url);
             //
@@ -122,9 +122,9 @@ function handler (req, res) {
         // to pass a mime type and load the file before sending it in the
         // response.
         var content_type = Config.types.default;
-        Object.keys(Config.types).forEach(function(type) {
+        Object.keys(config.types).forEach(function(type) {
             if (req.url.match(new RegExp(type+'$'))) {
-                content_type = Config.types[type];
+                content_type = config.types[type];
             }
         });
 
@@ -135,7 +135,7 @@ function handler (req, res) {
     }
 
     // Contruct a path to check.
-    var try_path = path.resolve(Config.public, req.url.replace(new RegExp('^/'), ''));
+    var try_path = path.resolve(config.public, req.url.replace(new RegExp('^/'), ''));
 
     // Without an extension, add index.html.
     if (!try_path.match(/\.[a-zA-Z0-9]+$/)) try_path = try_path + '/index.html';
