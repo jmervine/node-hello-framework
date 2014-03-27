@@ -58,8 +58,8 @@ clean/express: .PHONY
 
 # Geddy
 ###
-geddy: node_modules/geddy/.bin/geddy .PHONY
-	cd geddy; ../node_modules/.bin/geddy
+geddy.js: node_modules/geddy/.bin/geddy .PHONY
+	cd geddy.js; ../node_modules/.bin/geddy
 
 node_modules/geddy/.bin/geddy:
 	npm install geddy
@@ -98,8 +98,8 @@ clean/flatiron: .PHONY
 
 # Locomotive
 ###
-locomotive: node_modules/locomotive/.bin/lcm locomotive/node_modules .PHONY
-	cd locomotive; ./node_modules/.bin/lcm server
+locomotive.js: node_modules/locomotive/.bin/lcm locomotive.js/node_modules .PHONY
+	cd locomotive.js; ./node_modules/.bin/lcm server
 
 node_modules/locomotive/.bin/lcm:
 	npm install locomotive
@@ -110,7 +110,7 @@ locomotive/node_modules:
 clean/locomotive: .PHONY
 	-rm -rf node_modules/locomotive
 	-rm -rf node_modules/.bin/lcm
-	-rm -rf locomotive/node_modules
+	-rm -rf locomotive.js/node_modules
 
 # Ni
 ###
