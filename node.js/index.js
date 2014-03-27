@@ -16,6 +16,11 @@
  *
  * 2. Loading static html file on request, and returning it via
  *    the http response.
+ * 
+ * Additoinally, I'll include commented code for expanding this 
+ * example to include template rendering. However, I'm keeping it
+ * commented, as it requires additional npm's for implementation
+ * and I want this to be a working raw node example.
  *****************************************************************/
 
 var fs = require('fs');
