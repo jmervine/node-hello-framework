@@ -28,6 +28,7 @@ var path = require('path');
 
 // configuration
 var config = {
+    port: 3000,
     public: path.resolve(__dirname, 'public'),
 
     // Here I've build a simple list of mime types
@@ -60,8 +61,8 @@ var config = {
 var server = require('http').createServer(handler);
 
 // port listener
-server.listen(3000);
-console.log('Listening on port %d', 3000);
+server.listen(config.port);
+console.log('Listening on port %d', config.port);
 
 // handle http requests
 function handler (req, res) {
