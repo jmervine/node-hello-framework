@@ -1,4 +1,5 @@
 ROOT=$(shell pwd)
+SHUNT_VERSION=v0.2.5
 METEOR_VERSION=v0.5.9
 
 # Global Tasks
@@ -281,10 +282,14 @@ test: test/shunt.sh .PHONY
 	@./test/shunt.sh --verbose $(FRAMEWORK_TESTS)
 
 test/shunt.sh:
-	cd test && curl -sL https://raw.github.com/odb/shunt/master/install.sh | bash -s master local
+	cd test && curl -sL https://raw.github.com/odb/shunt/master/install.sh | bash -s $(SHUNT_VERSION) local
+
+test/clean:
+	rm test/shunt.sh
 
 test/%: test/shunt.sh .PHONY
 	@make clean > /dev/null
 	./test/shunt.sh --verbose ./$@
+
 
 # vim: set ft=make ai sw=4 sts=4 ts=4 noexpandtab:
