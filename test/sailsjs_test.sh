@@ -30,7 +30,8 @@ function run_tests {
 
   echo " "
   echo "[INFO]: stopping sails"
-  pkill -9 -f "sails" 2>&1 > /dev/null
+  pkill -9 -f "node_modules/.bin/sails" 2>&1 > /dev/null
+  pkill -9 -f "sails.js/node_modules/sails" 2>&1 > /dev/null
   sleep 2 # keeps output cleanish
 
   assert "make clean/sails.js" \

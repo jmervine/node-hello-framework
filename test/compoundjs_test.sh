@@ -30,7 +30,7 @@ function run_tests {
 
   echo " "
   echo "[INFO]: stopping compound.js"
-  kill $(jobs -p) 2>&1 > /dev/null
+  pkill -9 -f "node server.js" 2>&1 > /dev/null
   sleep 2 # keeps output cleanish
 
   assert "make clean/compound.js" \
