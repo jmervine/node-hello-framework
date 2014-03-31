@@ -276,7 +276,7 @@ tower: .PHONY
 # Test Stuff
 ###
 FRAMEWORK_TESTS=$(shell find ./test -name *_test.sh)
-test: .PHONY
+test: test/shunt.sh .PHONY
 	@make clean > /dev/null
 	@./test/shunt.sh --verbose $(FRAMEWORK_TESTS)
 
