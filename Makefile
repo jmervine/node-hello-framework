@@ -121,7 +121,7 @@ meteor.js: node_modules/meteor .PHONY
 node_modules/meteor:
 	-mkdir -p node_modules
 	git clone https://github.com/meteor/meteor.git node_modules/meteor
-	cd node_modules/meteor && git co -b $(METEOR_VERSION) $(METEOR_VERSION)
+	cd node_modules/meteor && git checkout -b $(METEOR_VERSION) $(METEOR_VERSION)
 
 clean/meteor:
 	-rm -rf node_modules/meteor
