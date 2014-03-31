@@ -26,6 +26,15 @@ A far from complete collection of Hello World examples for various Node.js web f
     #
     # $ make express
 
+#### Development
+
+    # this take quite a while
+    make test
+
+    # this is better
+    make test/<framework>_test.sh
+
+
 ## Frameworks:
 
 * [node.js](#nodejs)

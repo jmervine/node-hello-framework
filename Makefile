@@ -1,4 +1,5 @@
 ROOT=$(shell pwd)
+METEOR_VERSION=v0.5.9
 
 # Global Tasks
 ###
@@ -56,12 +57,28 @@ clean/express: .PHONY
 	-rm -rf node_modules/express
 	-rm node_modules/.bin/express
 
+# Flatiron
+###
+flatiron: node_modules/flatiron node_modules/union .PHONY
+	node flatiron
+
+node_modules/flatiron:
+	npm install flatiron
+
+node_modules/union:
+	npm install union
+
+clean/flatiron: .PHONY
+	-rm -rf node_modules/flatiron
+	-rm -rf node_modules/union
+	-rm node_modules/.bin/flatiron
+
 # Geddy
 ###
-geddy.js: node_modules/geddy/.bin/geddy .PHONY
+geddy.js: node_modules/.bin/geddy .PHONY
 	cd geddy.js; ../node_modules/.bin/geddy
 
-node_modules/geddy/.bin/geddy:
+node_modules/.bin/geddy:
 	npm install geddy
 
 clean/geddy: .PHONY
@@ -80,28 +97,12 @@ clean/hapi:
 	-rm -rf node_modules/hapi
 	-rm -rf node_modules/.bin/hapi
 
-# Flatiron
-###
-flatiron: node_modules/flatiron node_modules/union .PHONY
-	node flatiron
-
-node_modules/flatiron:
-	npm install flatiron
-
-node_modules/union:
-	npm install union
-
-clean/flatiron: .PHONY
-	-rm -rf node_modules/flatiron
-	-rm -rf node_modules/union
-	-rm node_modules/.bin/flatiron
-
 # Locomotive
 ###
-locomotive.js: node_modules/locomotive/.bin/lcm locomotive.js/node_modules .PHONY
+locomotive.js: node_modules/.bin/lcm locomotive.js/node_modules .PHONY
 	cd locomotive.js; ./node_modules/.bin/lcm server
 
-node_modules/locomotive/.bin/lcm:
+node_modules/.bin/lcm:
 	npm install locomotive
 
 locomotive.js/node_modules:
@@ -111,6 +112,20 @@ clean/locomotive.js: .PHONY
 	-rm -rf node_modules/locomotive
 	-rm -rf node_modules/.bin/lcm
 	-rm -rf locomotive.js/node_modules
+
+# Meteor
+###
+meteor.js: node_modules/meteor .PHONY
+	cd meteor.js; ../node_modules/meteor/meteor
+
+node_modules/meteor:
+	-mkdir -p node_modules
+	git clone https://github.com/meteor/meteor.git node_modules/meteor
+	cd node_modules/meteor && git co -b $(METEOR_VERSION) $(METEOR_VERSION)
+
+clean/meteor:
+	-rm -rf node_modules/meteor
+
 
 # Ni
 ###
@@ -126,17 +141,18 @@ clean/ni: clean/connect
 
 # Nombo
 ###
-nombo: node_modules/nombo/.bin/nombo .PHONY
-	@# ensure nombo modules are installed correctly
-	./node_modules/.bin/nombo create --force nombo
+nombo: node_modules/.bin/nombo node_modules/socketcluster-server .PHONY
 	node nombo/server.node 3000
 
-node_modules/nombo/.bin/nombo:
+node_modules/.bin/nombo:
 	npm install nombo
 
+# hack to ensure nombo modules are installed correctly
+node_modules/socketcluster-server:
+	./node_modules/.bin/nombo create --force nombo
+
 clean/nombo: .PHONY
-	-rm -rf node_modules/nombo
-	-rm -rf node_modules/.bin/nombo
+	@echo "Nombo messes up node_modules but good, 'make clean' should be run removing all modules to ensure nombo is cleaned."
 
 # partial.js
 ###
@@ -178,6 +194,17 @@ clean/sails.js:
 	-rm -rf node_modules/.bin/sails
 	-rm -rf sails.js/node_modules
 
+# Socket.IO
+###
+socket.io: node_modules/socket.io .PHONY
+	node socket.io
+
+node_modules/socket.io:
+	npm install socket.io
+
+clean/socket.io:
+	-rm -rf node_modules/socket.io
+
 # SocketStream
 ###
 socketstream: node_modules/socketstream socketstream/node_modules .PHONY
@@ -193,17 +220,6 @@ clean/socketstream: .PHONY
 	-rm -rf node_modules/socketstream
 	-rm -rf node_modules/.bin/socketstream
 	-rm -rf socketstream/node_modules
-
-# Socket.IO
-###
-socket.io: node_modules/socket.io .PHONY
-	node socket.io
-
-node_modules/socket.io:
-	npm install socket.io
-
-clean/socket.io:
-	-rm -rf node_modules/socket.io
 
 # Spine
 ###
@@ -250,26 +266,25 @@ clean/webjs:
 koa: .PHONY
 	# Sample code exists but is disabled as it's un-tested at this time due to it's node >=0.11 requirement.
 
-#koa: node_modules/koa .PHONY
-	@#node koa
-
-#node_modules/koa:
-	@#npm install koa
-
 # Tower
 ###
 tower: .PHONY
 	# Sample code exists but is disabled as it's un-tested at this time due to it's node >=0.11 requirement.
 
-#tower: node_modules/tower-router node_modules/koa .PHONY
-	@#node tower
-
-#node_modules/tower-router:
-	@#npm install tower-router
-
-#clean/tower: clean/koa
-	@#-rm -rf node_modules/tower-router
-
 .PHONY:
+
+# Test Stuff
+###
+FRAMEWORK_TESTS=$(shell find ./test -name *_test.sh)
+test: .PHONY
+	@make clean > /dev/null
+	@./test/shunt.sh --verbose $(FRAMEWORK_TESTS)
+
+test/shunt.sh:
+	cd test && curl -sL https://raw.github.com/odb/shunt/master/install.sh | bash -s master local
+
+test/%: test/shunt.sh .PHONY
+	@make clean > /dev/null
+	./test/shunt.sh --verbose ./$@
 
 # vim: set ft=make ai sw=4 sts=4 ts=4 noexpandtab:

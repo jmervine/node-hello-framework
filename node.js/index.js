@@ -16,8 +16,8 @@
  *
  * 2. Loading static html file on request, and returning it via
  *    the http response.
- * 
- * Additoinally, I'll include commented code for expanding this 
+ *
+ * Additoinally, I'll include commented code for expanding this
  * example to include template rendering. However, I'm keeping it
  * commented, as it requires additional npm's for implementation
  * and I want this to be a working raw node example.
@@ -54,7 +54,7 @@ var config = {
     //
     // usage:
     //
-    // res.setHeader('Content-Type', Config.types(try_path)); /* see below for try_path */
+    // res.setHeader('Content-Type', config.types(try_path)); /* see below for try_path */
 };
 
 // initialize http server
@@ -78,7 +78,7 @@ function handler (req, res) {
             // request path - req.url - and/or the request method -
             // req.path.
             console.log('Sending:', req.url);
-            res.setHeader('Content-Type', Config.types.default);
+            res.setHeader('Content-Type', config.types.default);
             res.writeHead(200);
             return res.end('Hello Node!<br /><br />Say hi to <a href=/hello.html>Hello Static</a> as well!');
 
@@ -103,7 +103,7 @@ function handler (req, res) {
 
             // config.views  = path.resolve(__dirname, 'views');
             //
-            // var view_path = path.resolve(Config.views, req.url);
+            // var view_path = path.resolve(config.views, req.url);
             //
             // if (!view_path.match(/\.jade$/)) view_path = view_path + '/index.jade';
             //
@@ -113,7 +113,7 @@ function handler (req, res) {
             //         return res.end();
             //     }
             //     console.log('Sending:', req.url);
-            //     res.setHeader('Content-Type', Config.types.html);
+            //     res.setHeader('Content-Type', config.types.html);
             //     res.writeHead(200);
             //     return res.end(html);
             // });
@@ -122,7 +122,7 @@ function handler (req, res) {
         // If there's no error, then the static file exists. We'll need
         // to pass a mime type and load the file before sending it in the
         // response.
-        var content_type = Config.types.default;
+        var content_type = config.types.default;
         Object.keys(config.types).forEach(function(type) {
             if (req.url.match(new RegExp(type+'$'))) {
                 content_type = config.types[type];
